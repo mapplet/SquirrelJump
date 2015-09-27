@@ -14,7 +14,6 @@ using namespace std;
 int recursive(const int& index, const vector<int>& my_array) {
     vector<int> v;
     int max_jumps = 0;
-    string level(depth, ' ');
 
     if (index > 0)
     {
