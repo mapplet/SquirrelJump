@@ -35,7 +35,7 @@ int recursive(const int& index, const vector<int>& my_array) {
         ++max_jumps;
         for (int index : v)
         {
-            int jumps = recursive(index, my_array, depth+5);
+            int jumps = recursive(index, my_array);
             if (jumps >= max_jumps)
                 max_jumps = jumps+1;
         }
